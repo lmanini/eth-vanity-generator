@@ -1,4 +1,4 @@
-## My (not so efficient) vanity address generator
+# My (not so efficient) vanity address generator
 
 One morning I woke up and thought it'd be cool to make my own ETH address generator.
 
@@ -57,4 +57,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT © [Lucas](https://github.com/lmanini)
+MIT © [Lucas]()
