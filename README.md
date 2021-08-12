@@ -6,7 +6,7 @@ One morning I woke up and thought it'd be cool to make my own ETH address genera
 
 There's a couple of reasons why I wanted to make this:
 
-- Whilst reading [Mastering Ethereum] (https://github.com/ethereumbook/ethereumbook), I got a glimpse at how
+- Whilst reading [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook), I got a glimpse at how
 key pairs are generated and addresses derived, so I wanted to use this to make use of what I had just read.
 - I always wanted to create addresses with custom-defined prefixes, but could never fully trust an online
 resource to do it for me: so I implemented my own, which can be built and run locally with no need for an
@@ -57,4 +57,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-MIT © [Lucas]()
+MIT © [Lucas](https://github.com/lmanini)
