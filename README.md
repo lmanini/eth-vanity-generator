@@ -20,8 +20,7 @@ internet connection.
 
 You can either:
 
-- Run the executables I built for you and left in the `executables` dir (hopefully they work, only tested them
-on my Linux machine)
+- Run the executables I built for you and left in the `executables` dir (hopefully the macOS one works, don't have a machine to test it on)
 - Build the executable yourself running `pkg package.json` from within the root dir
 - Run `node /generator.js` from the src dir or `node src/generator.js` from the root dir
 
