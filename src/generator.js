@@ -16,8 +16,8 @@ function getVanityAddr(prefix) {
     let privKey, address, addressPrefix;
     let counter = 0;
 
-    if (prefix.length > 8) {
-        console.log("Prefix is too long buddy, gonna take a lot of time to find your address lol");
+    if (prefix.length > 40) {
+        console.log("Prefix is too long buddy, ain't no address longer than 40 characters");
         return;
     }
 
@@ -67,9 +67,10 @@ function isHex(str) {
 function main() {
 
     console.log(`\nWelcome to Caslu's vanity address generator!
-        \nHere you can input a prefix of up to 8 characters long, and I will grind away looking for the first address that starts with your prefix!`);
+        \nHere you can input a prefix of any length, and I will grind away looking for the first address that starts with your prefix!`);
 
-    console.log(`Keep in mind that the probability of me finding your desired address decreases exponentially the longer your prefix is!\n`)
+    console.log(`Keep in mind that the probability of me finding your desired address decreases exponentially the longer your prefix is!\n
+    I suggest you use a prefix with maximum 6 characters, using more will be a punishment to your poor machine..`);
 
     readline.question(`Gimme a prefix and I'll see what I can do ;)\nPrefix: `, prefix => {
 
