@@ -2,6 +2,9 @@
 
 One morning I woke up and thought it'd be cool to make my own ETH address generator.
 
+Specifically, this generator will ask you for a certain prefix with which the returned address must begin with: once found, it'll give you the private key
+to your new and super cool address ;)
+
 ## Motivation
 
 There's a couple of reasons why I wanted to make this:
