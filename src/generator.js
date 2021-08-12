@@ -4,13 +4,12 @@ const PrivateKey = eciesjs.PrivateKey;
 const ethers = require("ethers");
 const utils = ethers.utils;
 
-
 const readline = require("readline").createInterface({
-    input : process.stdin,
-    output : process.stdout
+    input: process.stdin,
+    output: process.stdout
 });
 
-function getVanityAddr(prefix) {
+function findVanityAddr(prefix) {
 
     let flag = false;
     let privKey, address, addressPrefix;
@@ -21,7 +20,7 @@ function getVanityAddr(prefix) {
         return;
     }
 
-    if(!isHex(prefix)) {
+    if (!isHex(prefix)) {
         console.log("What kind of prefix is that lol.\nAddresses can only start with hexadecimal characters...");
         return;
     }
@@ -66,16 +65,17 @@ function isHex(str) {
 
 function main() {
 
-    console.log(`\nWelcome to Caslu's vanity address generator!
+    console.log(`Welcome to Caslu's vanity address generator!
         \nHere you can input a prefix of any length, and I will grind away looking for the first address that starts with your prefix!`);
 
-    console.log(`Keep in mind that the probability of me finding your desired address decreases exponentially the longer your prefix is!\n
-    I suggest you use a prefix with maximum 6 characters, using more will be a punishment to your poor machine..`);
+    console.log(`\n(Keep in mind that the probability of me finding your desired address decreases exponentially the longer your prefix is!`
+        + `\nI suggest you use a prefix with maximum 6 characters, using more will be a punishment to your poor machine..)`);
 
-    readline.question(`Gimme a prefix and I'll see what I can do ;)\nPrefix: `, prefix => {
+    readline.question(`\nGimme a prefix and I'll see what I can do ;)\nPrefix: `, prefix => {
 
-        getVanityAddr(prefix);
+        findVanityAddr(prefix);
         readline.close();
     });
 }
+
 main();
